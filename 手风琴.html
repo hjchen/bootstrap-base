@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!--在IE运行最新的渲染模式-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--初始化移动浏览显示-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap的HTML标准模板</title>
+    <!-- Bootstrap -->
+    <link href="bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--你自己的样式文件 -->
+    <link href="css/your-style.css" rel="stylesheet">
+    <!-- 以下两个插件用于在IE8以及以下版本浏览器支持HTML5元素和媒体查询，如果不需要用可以移除 -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--手风琴-->
+<div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">标题一</a></h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse in">
+            <div class="panel-body">标题一对应的内容</div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">标题二</a></h4>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse">
+            <div class="panel-body">标题二对应的内容</div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title"><a data-toggle="collapse"data-parent="#accordion"href="#collapseThree">标题三</a></h4>
+        </div>
+        <div id="collapseThree" class="panel-collapse collapse">
+            <div class="panel-body">标题三对应的内容</div>
+        </div>
+    </div>
+</div>
+<!--轮播图-->
+<div id="slidershow" class="carousel" data-ride="carousel">
+    <!-- 设置图片轮播的顺序 -->
+    <ol class="carousel-indicators">
+        <li class="active" data-target="#slidershow" data-slide-to="0">1</li>
+        <li data-target="#slidershow" data-slide-to="1">2</li>
+        <li data-target="#slidershow" data-slide-to="2">3</li>
+    </ol>
+    <!-- 设置轮播图片 -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <a href="##"><img src="http://images3.c-ctrip.com/rk/201407/ll580x145.jpg" alt=""></a>
+            <div class="carousel-caption">
+                <h3>图片标题1</h3>
+                <p>描述内容1...</p>
+            </div>
+        </div>
+        <div class="item">
+            <a href="##"><img src="http://images3.c-ctrip.com/dj/201408/zj/zj_580145.jpg" alt=""></a>
+            <div class="carousel-caption">
+                <h3>图片标题2</h3>
+                <p>描述内容2...</p>
+            </div>
+        </div>
+        <div class="item">
+            <a href="##"><img src="http://images3.c-ctrip.com/dj/201408/zqgq_580145.jpg" alt=""></a>
+            <div class="carousel-caption">
+                <h3>图片标题3</h3>
+                <p>描述内容3...</p>
+            </div>
+        </div>
+    </div>
+    <a class="left carousel-control " href="#slidershow" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#slidershow" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+</div>
+<!-- 如果要使用Bootstrap的js插件，必须先调入jQuery -->
+<script src="jquery-2.1.4.js"></script>
+<!-- 包括所有bootstrap的js插件或者可以根据需要使用的js插件调用　-->
+<script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+</body>
+</html>

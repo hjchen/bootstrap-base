@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!--在IE运行最新的渲染模式-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--初始化移动浏览显示-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap的HTML标准模板</title>
+    <!-- Bootstrap -->
+    <link href="bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--你自己的样式文件 -->
+    <link href="css/your-style.css" rel="stylesheet">
+    <!-- 以下两个插件用于在IE8以及以下版本浏览器支持HTML5元素和媒体查询，如果不需要用可以移除 -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--媒体类-->
+<div class="media">
+    <a class="pull-left" href="#">
+        <img class="media-object" src="http://img.mukewang.com/52e1d29d000161fe06000338-300-170.jpg" alt="...">
+    </a>
+    <div class="media-body">
+        <h4 class="media-heading">系列：十天精通CSS3</h4>
+        <div>全方位深刻详解CSS3模块知识，经典案例分析，代码同步调试，让网页穿上绚丽装备！</div>
+    </div>
+</div>
+<!--嵌套媒体类-->
+<div class="media">
+    <a class="pull-left" href="#">
+        <img class="media-object" src="http://a.disquscdn.com/uploads/users/3740/2069/avatar92.jpg?1406972031" alt="...">
+    </a>
+    <div class="media-body">
+        <h4 class="media-heading">我是大漠</h4>
+        <div>我是W3cplus站长大漠，我在写Bootstrap框中的媒体对象测试用例</div>
+        <div class="media">
+            <a class="pull-left" href="#">
+                <img class="media-object" src="http://tp2.sinaimg.cn/3306361973/50/22875318196/0" alt="...">
+            </a>
+            <div class="media-body">
+                <h4 class="media-heading">慕课网</h4>
+                <div>大漠写的《玩转Bootstrap》系列教程即将会在慕课网上发布</div>
+                <div class="media">
+                    <a class="pull-left" href="#">
+                        <img class="media-object" src="http://tp4.sinaimg.cn/1167075935/50/22838101204/1" alt="...">
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">W3cplus</h4>
+                        <div>W3cplus站上还有很多教程....</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--评论系统-->
+<ul class="media-list">
+    <li class="media">
+        <a class="pull-left" href="#">
+            <img class="media-object" src="http://a.disquscdn.com/uploads/users/3740/2069/avatar92.jpg?1406972031" alt="...">
+        </a>
+        <div class="media-body">
+            <h4 class="media-heading">我是大漠</h4>
+            <div>我是W3cplus站长大漠，我在写Bootstrap框中的媒体对象测试用例</div>
+        </div>
+    </li>
+    <li class="media">
+        <a class="pull-left" href="#">
+            <img class="media-object" src="http://tp2.sinaimg.cn/3306361973/50/22875318196/0" alt="...">
+        </a>
+        <div class="media-body">
+            <h4 class="media-heading">慕课网</h4>
+            <div>大漠写的《玩转Bootstrap》系列教程即将会在慕课网上发布</div>
+        </div>
+    </li>
+    <li class="media">
+        <a class="pull-left" href="#">
+            <img class="media-object" src="http://tp4.sinaimg.cn/1167075935/50/22838101204/1" alt="...">
+        </a>
+        <div class="media-body">
+            <h4 class="media-heading">W3cplus</h4>
+            <div>W3cplus站上还有很多教程....</div>
+        </div>
+    </li>
+</ul>
+<!-- 如果要使用Bootstrap的js插件，必须先调入jQuery -->
+<script src="jquery-2.1.4.js"></script>
+<!-- 包括所有bootstrap的js插件或者可以根据需要使用的js插件调用　-->
+<script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
